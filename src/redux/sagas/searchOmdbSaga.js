@@ -5,7 +5,7 @@ function* getVideoOmdbWorker() {
   try {
     const result = yield call(() =>
       fetch(
-        `http://www.omdbapi.com/?s=${"word"}&type=${"movie"}&plot=short&apikey=f19c5d9a&page=1`
+        `https://www.omdbapi.com/?s=${"word"}&type=${"movie"}&plot=short&apikey=f19c5d9a&page=1`
       )
     );
 
@@ -20,7 +20,7 @@ function* getInputSagaOmdb(action) {
     const { text } = action;
     const result = yield call(() =>
       fetch(
-        `http://www.omdbapi.com/?s=${text}&type=${"movie"}&plot=short&apikey=f19c5d9a&page=1`
+        `https://www.omdbapi.com/?s=${text}&type=${"movie"}&plot=short&apikey=f19c5d9a&page=1`
       )
     );
     const request = yield result.json();
@@ -35,7 +35,7 @@ function* showDetailsOmdb(action) {
   try {
     const { id } = action;
     const result = yield call(() =>
-      fetch(`http://www.omdbapi.com/?i=${id}&plot=full&apikey=f19c5d9a`)
+      fetch(`https://www.omdbapi.com/?i=${id}&plot=full&apikey=f19c5d9a`)
     );
     const allInfo = yield result.json();
     yield put({
@@ -50,7 +50,7 @@ function* upPagination(action) {
     console.log(page, text);
     const result = yield call(() =>
       fetch(
-        `http://www.omdbapi.com/?s=${text}&type=${"movie"}&plot=short&apikey=f19c5d9a&page=${page}`
+        `https://www.omdbapi.com/?s=${text}&type=${"movie"}&plot=short&apikey=f19c5d9a&page=${page}`
       )
     );
     const request = yield result.json();
