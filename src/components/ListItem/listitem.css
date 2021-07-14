@@ -1,0 +1,15 @@
+.wrapp{
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    width:990px;
+    height: 420px;
+
+    padding: 10px;
+    overflow-y: scroll;
+    
+    
+}
+.wrapp::-webkit-scrollbar{
+    cursor: pointer;
+}
