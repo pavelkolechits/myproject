@@ -22,9 +22,5 @@ return(
 	</Provider>
 )
 
-
-
-
-
 }
 export default App;
