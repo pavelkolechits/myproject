@@ -54,8 +54,8 @@ const Button = styled.button`
 	height: 40px;
 	width: 80px;
 	color: #ccccccad;
-	/* border: 1px solid #ccc; */
 	border-radius: 3px;
 	letter-spacing: 1px;
 	margin-left: 2px;
+	cursor: pointer;
 `;

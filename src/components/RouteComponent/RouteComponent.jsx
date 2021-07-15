@@ -36,8 +36,8 @@ export const RouteComponent = () => {
     setNextPage(true);
   };
   useEffect(() => {
-  	dispatch({type: ACTIONS.GET_VIDEO_REQUEST})
-  },[])
+    dispatch({ type: ACTIONS.GET_VIDEO_REQUEST });
+  }, []);
 
   useEffect(() => {
     dispatch({ type: ACTIONS.GET_VIDEO_OMDB_REQUEST });
@@ -117,9 +117,8 @@ export const RouteComponent = () => {
         </Link>
       </Nav>
 
-      {/* {showForm ? <Form /> : ''} */}
       {showOmd || showForm ? <Form /> : ""}
-      {showOmd ? (
+      {showOmd && !state.searchOmdbhReducer.request?.Error ? (
         <>
           <ReactPaginate
             activeLinkClassName="dis"
@@ -133,21 +132,30 @@ export const RouteComponent = () => {
             containerClassName="li_cont animate__animated animate__backInDown  animate__faster"
             breakLinkClassName="li_link"
             breakClassName="li_page"
-            pageRangeDisplayed={1}
-            pageCount={20}
-			
+            pageRangeDisplayed={3}
+            pageCount={Math.ceil(
+              state.searchOmdbhReducer.request.totalResults / 10
+            )}
+
             // breakLabel={}
           ></ReactPaginate>
-          <ListPoster
-            className={
-              "posters animate__animated animate__backInLeft  animate__faster"
-            }
-          />
         </>
+      ) : (
+        <h3 style={{ color: "#ccc", textAlign: "center" }}>
+          {state.searchOmdbhReducer.request?.Error}
+        </h3>
+      )}
+      {showForm ? <ListItem /> : ""}
+      {showOmd ? (
+        <ListPoster
+          className={
+            "posters animate__animated animate__backInLeft  animate__faster"
+          }
+        />
       ) : (
         ""
       )}
-      {showForm ? <ListItem /> : ""}
+
       {state.searchOmdbhReducer.details ? <DetailsModal /> : ""}
 
       <Nav className="nav_bottom">

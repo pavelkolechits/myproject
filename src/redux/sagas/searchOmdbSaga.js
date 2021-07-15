@@ -5,7 +5,7 @@ function* getVideoOmdbWorker() {
   try {
     const result = yield call(() =>
       fetch(
-        `https://www.omdbapi.com/?s=${"word"}&type=${"movie"}&plot=short&apikey=f19c5d9a&page=1`
+        `https://www.omdbapi.com/?s=${"space"}&plot=short&apikey=f19c5d9a&page=1`
       )
     );
 
@@ -18,9 +18,10 @@ function* getVideoOmdbWorker() {
 function* getInputSagaOmdb(action) {
   try {
     const { text } = action;
+  
     const result = yield call(() =>
       fetch(
-        `https://www.omdbapi.com/?s=${text}&type=${"movie"}&plot=short&apikey=f19c5d9a&page=1`
+        `https://www.omdbapi.com/?s=${ text }&plot=short&apikey=f19c5d9a&page=1`
       )
     );
     const request = yield result.json();
@@ -28,7 +29,10 @@ function* getInputSagaOmdb(action) {
       type: ACTIONS.GET_VIDEO_OMDB_SUCCESS,
       request,
     });
-  } catch (e) {}
+  } catch (e) {
+  
+
+  }
 }
 
 function* showDetailsOmdb(action) {
@@ -50,7 +54,7 @@ function* upPagination(action) {
     console.log(page, text);
     const result = yield call(() =>
       fetch(
-        `https://www.omdbapi.com/?s=${text}&type=${"movie"}&plot=short&apikey=f19c5d9a&page=${page}`
+        `https://www.omdbapi.com/?s=${text || "space"}&plot=short&apikey=f19c5d9a&page=${page}`
       )
     );
     const request = yield result.json();

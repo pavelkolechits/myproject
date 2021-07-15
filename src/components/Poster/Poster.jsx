@@ -14,7 +14,7 @@ export const Poster = ({poster, type, title, year, id }) => {
  
     return (
         <div  className="film animate__animated animate__faster  animate__backInRight">
-            <div className="poster"><img src={poster}></img></div>
+            <div className="poster"><img src={poster || "N/A"}></img></div>
             <div className="info">
                 <span className="type">{type}</span>
                 <span className="title">{title}</span>
