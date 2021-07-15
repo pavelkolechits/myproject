@@ -137,7 +137,7 @@ export const RouteComponent = () => {
               state.searchOmdbhReducer.request.totalResults / 10
             )}
 
-            // breakLabel={}
+         
           ></ReactPaginate>
         </>
       ) : (
