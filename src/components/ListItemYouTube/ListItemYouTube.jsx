@@ -1,8 +1,8 @@
-import { Item } from "../Item/Item";
+import { ItemYouTube } from "../ItemYouTube/ItemYouTube";
 import { useSelector } from "react-redux";
-import "./listitem.css";
+import "./listitemyoutube.css";
 
-export const ListItem = ({}) => {
+export const ListItemYouTube = ({}) => {
   const video = useSelector((state) => state);
 
   return (
@@ -17,7 +17,7 @@ export const ListItem = ({}) => {
       ) : (
         <div className="wrapp ">
           {video.searchReducer.video.items?.map((i) => (
-            <Item key={i.id.videoId} videoId={i.id.videoId} />
+            <ItemYouTube key={i.id.videoId} videoId={i.id.videoId} />
           ))}
         </div>
       )}

@@ -9,7 +9,7 @@ import { ListPoster } from "../ListPoster/ListPoster";
 import { DetailsModal } from "../DetailsModal/DetailsModal";
 import ReactPaginate from "react-paginate";
 import "./routecomponent.css";
-import { ListItem } from "../ListItem/ListItem";
+import { ListItemYouTube } from "../ListItemYouTube/ListItemYouTube";
 import { ACTIONS } from "../../redux/constants";
 
 export const RouteComponent = () => {
@@ -98,7 +98,7 @@ export const RouteComponent = () => {
           {state.searchOmdbhReducer.request?.Error}
         </h3>
       )}
-      {showForm && state.searchReducer?.video ? <ListItem /> : ""}
+      {showForm && state.searchReducer?.video ? <ListItemYouTube /> : ""}
       {showOmd ? (
         <ListPoster
           className={
