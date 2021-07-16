@@ -45,6 +45,6 @@ function* getInputSaga(action) {
 	} catch (e) {}
 }
 export function* getVideoWatcher() {
-	yield takeEvery(ACTIONS.GET_VIDEO_REQUEST, getVideoWorker);
+	// yield takeEvery(ACTIONS.GET_VIDEO_REQUEST, getVideoWorker);
 	yield takeEvery(ACTIONS.GET_INPUT_VALUE, getInputSaga);
 }

@@ -1,13 +1,5 @@
-import "./nav.css"
-import { useDispatch } from "react-redux"
-import {ACTIONS} from "../../redux/constants"
-import { useEffect } from "react"
-export const Nav = ({children, className}) => {
-    // const dispatch = useDispatch()
-    // useEffect(() => {
-    //     dispatch({type: ACTIONS.GET_VIDEO_REQUEST})
-    // },[])
+import "./nav.css";
 
-
-    return <ol className={className}>{children}</ol>
-}
+export const Nav = ({ children, className }) => {
+  return <ol className={className}>{children}</ol>;
+};

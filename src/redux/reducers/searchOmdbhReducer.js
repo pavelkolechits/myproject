@@ -1,7 +1,6 @@
 import { ACTIONS } from '../constants';
 
 const defState = {
-	error: 'OOps...',
 	value: '',
 	details: false
 };
