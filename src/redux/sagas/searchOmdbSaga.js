@@ -50,11 +50,11 @@ function* showDetailsOmdb(action) {
 }
 function* upPagination(action) {
   try {
-    const { page, text } = action;
-    console.log(page, text);
+    const { page, textValue } = action;
+    console.log(page, textValue);
     const result = yield call(() =>
       fetch(
-        `https://www.omdbapi.com/?s=${text || "space"}&plot=short&apikey=f19c5d9a&page=${page}`
+        `https://www.omdbapi.com/?s=${textValue || "space"}&plot=short&apikey=f19c5d9a&page=${page}`
       )
     );
     const request = yield result.json();

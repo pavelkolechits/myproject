@@ -11,7 +11,7 @@ function* getVideoWorker() {
 	try {
 		const result = yield call(() =>
 			fetch(
-				`https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyDqoHCbhmTQ3QNWjfRKSUZoeBi6OWy-h4I&type=video&maxResults=9&q=${""}`
+				`https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyDqoHCbhmTQ3QNWjfRKSUZoeBi6OWy-h4I&type=video&maxResults=6&q=${""}`
 			)
 		);
 		const video = yield result.json();
@@ -34,7 +34,7 @@ function* getInputSaga(action) {
 		} = action;
 		const result = yield call(() =>
 			fetch(
-				`https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyDqoHCbhmTQ3QNWjfRKSUZoeBi6OWy-h4I&type=video&maxResults=9&q=${text}`
+				`https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyDqoHCbhmTQ3QNWjfRKSUZoeBi6OWy-h4I&type=video&maxResults=6&q=${text}`
 			)
 		);
 		const video = yield result.json();
@@ -45,6 +45,6 @@ function* getInputSaga(action) {
 	} catch (e) {}
 }
 export function* getVideoWatcher() {
-	// yield takeEvery(ACTIONS.GET_VIDEO_REQUEST, getVideoWorker);
+	yield takeEvery(ACTIONS.GET_VIDEO_REQUEST, getVideoWorker);
 	yield takeEvery(ACTIONS.GET_INPUT_VALUE, getInputSaga);
 }

@@ -11,6 +11,7 @@ export function searchOmdbhReducer(state = defState, action) {
 			return { ...state, request: action.request };
 		}
 		case ACTIONS.GET_INPUT_VALUE_OMDB: {
+			
 			return {...state, value: action.text}
 		}
 		case ACTIONS.GET_OMDB_ID: {

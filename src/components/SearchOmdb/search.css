@@ -1,0 +1,85 @@
+.li_page {
+  width: 30px;
+  height: 30px;
+  list-style-type: none;
+  padding-top: 10px;
+}
+.li_link {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  color: #ccc;
+
+  margin: 10px auto;
+  margin-left: 3px;
+}
+.li_cont {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 500px;
+}
+.li_each_page {
+  width: 30px;
+  height: 30px;
+
+  color: #ccc;
+  border: 1px solid rgb(122, 93, 93);
+  list-style-type: none;
+  color: rgb(191, 227, 166, 57%);
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  background: #00000080;
+}
+.dis {
+  background-color: rgba(182, 123, 55, 0);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+  box-shadow: 0px 0px 10px 10px rgb(107, 83, 83);
+  padding: 5px;
+  background: #00000080;
+}
+.previos {
+  list-style-type: none;
+
+  border: 1px solid #ccc;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+  background-color: rgba(0, 0, 0, 0.385);
+  width: 30px;
+  height: 30px;
+  box-shadow: none;
+  padding: 5px;
+  background: #00000080;
+}
+
+.activeLinkClassName {
+  background-color:rgba(38, 30, 21, 0.5);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    opacity: 0.5;
+    font-size: 15px;
+    box-shadow: 0px 0px 10px 10px rgb(107, 83, 83);
+    border:1px solid #00000080;
+}

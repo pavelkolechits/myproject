@@ -1,5 +1,5 @@
 import './link.css';
-export const Link = ({ children, className, onMouseEnter, onMouseLeave, onClick}) => {
+export const CustomLink = ({ children, className, onMouseEnter, onMouseLeave, onClick}) => {
     
 
 

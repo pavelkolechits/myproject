@@ -6,7 +6,7 @@ export const ListPoster = ({ modal, className }) => {
   const poster = useSelector((state) => state.searchOmdbhReducer.request);
 
   return (
-    <div className={className}>
+    <div style={{width:"860px", display:"flex",flexWrap:"wrap", margin:"auto"}} >
       {!poster?.Error
         ? poster?.Search.map((i) => (
             <Poster
@@ -21,5 +21,6 @@ export const ListPoster = ({ modal, className }) => {
           ))
         : ""}
     </div>
+   
   );
 };

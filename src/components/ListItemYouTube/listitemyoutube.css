@@ -6,10 +6,7 @@
     height: 420px;
 
     padding: 10px;
-    overflow-y: scroll;
     
     
 }
-.wrapp::-webkit-scrollbar{
-    cursor: pointer;
-}
+
