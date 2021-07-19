@@ -1,9 +1,8 @@
 import "./detailsmodal.css";
 import { ACTIONS } from "../../redux/constants";
 import { useDispatch, useSelector } from "react-redux";
-import { useState } from "react";
 
-export const DetailsModal = ({}) => {
+export const DetailsModal = () => {
   const dispatch = useDispatch();
   const closeModal = () => {
     dispatch({ type: ACTIONS.CLOSE_MODAL });
@@ -37,11 +36,9 @@ export const DetailsModal = ({}) => {
           <li className="title">
             <span>Genre:</span> {allInfo?.Genre ? allInfo.Genre : ""}
           </li>
-
           <li className="title">
             <span>Director:</span> {allInfo?.Director ? allInfo.Director : ""}
           </li>
-
           <li className="title">
             <span>Writer:</span> {allInfo?.Writer ? allInfo.Writer : ""}
           </li>

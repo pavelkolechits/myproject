@@ -16,11 +16,10 @@ export const ListPoster = ({ modal, className }) => {
               key={i.imdbID}
               year={i.Year}
               title={i.Title}
-              poster={i.Poster !== "N/A" ? i.Poster : <img src={""}></img>}
+              poster={i.Poster }
             />
           ))
         : ""}
     </div>
-   
   );
 };

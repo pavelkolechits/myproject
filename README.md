@@ -1,4 +1,4 @@
-# Search Video
+# Search Movie
 #### for TeachMeSkills, coded by [Pavel Kalechyts](https://github.com/pavelkolechit)
 
 
@@ -12,4 +12,4 @@ Repository include project with usage CSS, HTML, JavaScript, React, Redux, Redux
 
 ## Check it out:)
 
-[Search Video](https://admiring-neumann-e90897.netlify.app/)
+[Search Movie](https://admiring-neumann-e90897.netlify.app/)

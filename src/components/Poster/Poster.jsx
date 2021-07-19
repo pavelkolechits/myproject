@@ -1,8 +1,10 @@
 import "./poster.css";
 import { useDispatch } from "react-redux";
 import { ACTIONS } from "../../redux/constants";
+
 export const Poster = ({ poster, type, title, year, id }) => {
   const dispatch = useDispatch();
+
   const onClickDetails = () => {
     dispatch({ type: ACTIONS.GET_OMDB_ID, id });
     dispatch({ type: ACTIONS.SHOW_DETAILS });
@@ -16,7 +18,6 @@ export const Poster = ({ poster, type, title, year, id }) => {
       <div className="info">
         <span className="type">{type}</span>
         <span className="title">{title}</span>
-
         <button onClick={onClickDetails} className="button">
           Details
         </button>

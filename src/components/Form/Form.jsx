@@ -1,25 +1,6 @@
-import "./form.css";
 import styled from "styled-components";
-import { useState } from "react";
-import { useDispatch } from "react-redux";
-import { ACTIONS } from "../../redux/constants";
 
-export const Form = ({ showForm, onClick, onChange }) => {
-//   const dispatch = useDispatch();
-//   const [text, setText] = useState("");
-
-//   const clickButton = () => {
-//     if (showForm) {
-//       dispatch({ type: ACTIONS.GET_INPUT_VALUE, text });
-//     } else {
-//       dispatch({ type: ACTIONS.GET_INPUT_VALUE_OMDB, text });
-//     }
-//   };
-
-//   const onChangeForm = (event) => {
-//     setText(event.target.value);
-//   };
-
+export const Form = ({ onClick, onChange }) => {
   return (
     <Container className="animate__animated animate__backInDown animate__faster">
       <Input onChange={onChange} />

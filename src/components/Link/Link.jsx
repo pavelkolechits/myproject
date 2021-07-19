@@ -1,8 +1,8 @@
-import './link.css';
-export const CustomLink = ({ children, className, onMouseEnter, onMouseLeave, onClick}) => {
-    
-
-
-
-	return <li onClick={onClick} onMouseLeave={onMouseLeave} onMouseEnter={onMouseEnter} className={className}>{children}</li>;
+import "./link.css";
+export const CustomLink = ({ children, className, onClick }) => {
+  return (
+    <li onClick={onClick} className={className}>
+      {children}
+    </li>
+  );
 };

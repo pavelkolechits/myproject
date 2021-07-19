@@ -1,34 +1,26 @@
-
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-body{
+body {
   background-image: url(./img/s.jpeg);
   background-attachment: fixed;
-	background-repeat: no-repeat;
+  background-repeat: no-repeat;
   overflow-y: scroll;
-
-	/* background-size: cover; */
 }
-body::-webkit-scrollbar{
-
- width: 5px;
- height: 5px;
- background-color:rgb(5, 5, 5);
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: rgb(5, 5, 5);
 }
-body::-webkit-scrollbar-thumb{
-  background-color:rgb(44, 46, 46);
- border-radius: 2px;
-  border:1px solid rgb(44, 46, 46);
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(44, 46, 46);
+  border-radius: 2px;
+  border: 1px solid rgb(44, 46, 46);
 }
-
-
-p{
-  color:rgb(194, 179, 179);
-  margin: 20px ;
+p {
+  color: rgb(194, 179, 179);
+  margin: 20px;
   font-size: 20px;
-  
 }

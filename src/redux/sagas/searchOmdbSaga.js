@@ -8,20 +8,16 @@ function* getVideoOmdbWorker() {
         `https://www.omdbapi.com/?s=${"space"}&plot=short&apikey=f19c5d9a&page=1`
       )
     );
-
     const request = yield result.json();
-
     yield put({ type: ACTIONS.GET_VIDEO_OMDB_SUCCESS, request });
   } catch (e) {}
 }
-
 function* getInputSagaOmdb(action) {
   try {
     const { text } = action;
-  
     const result = yield call(() =>
       fetch(
-        `https://www.omdbapi.com/?s=${ text }&plot=short&apikey=f19c5d9a&page=1`
+        `https://www.omdbapi.com/?s=${text}&plot=short&apikey=f19c5d9a&page=1`
       )
     );
     const request = yield result.json();
@@ -29,12 +25,8 @@ function* getInputSagaOmdb(action) {
       type: ACTIONS.GET_VIDEO_OMDB_SUCCESS,
       request,
     });
-  } catch (e) {
-  
-
-  }
+  } catch (e) {}
 }
-
 function* showDetailsOmdb(action) {
   try {
     const { id } = action;
@@ -54,11 +46,12 @@ function* upPagination(action) {
     console.log(page, textValue);
     const result = yield call(() =>
       fetch(
-        `https://www.omdbapi.com/?s=${textValue || "space"}&plot=short&apikey=f19c5d9a&page=${page}`
+        `https://www.omdbapi.com/?s=${
+          textValue || "space"
+        }&plot=short&apikey=f19c5d9a&page=${page}`
       )
     );
     const request = yield result.json();
-    
     yield put({
       type: ACTIONS.GET_VIDEO_OMDB_PAGINATION_SUCCESS,
       request,

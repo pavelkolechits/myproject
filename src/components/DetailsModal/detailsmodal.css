@@ -3,9 +3,9 @@
   height: 100vh;
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, .8) 50%,
+    rgba(0, 0, 0, 0.8) 50%,
     rgba(0, 0, 0, 1) 100%,
-    rgba(0, 0, 0, .8) 15%
+    rgba(0, 0, 0, 0.8) 15%
   );
   display: flex;
   justify-content: center;
@@ -34,7 +34,6 @@
 .info_modal {
   width: 482px;
   height: 580px;
-  /* border: 1px solid #ccc; */
   border-radius: 10px;
   padding: 10px;
   display: flex;
@@ -49,15 +48,15 @@
 }
 .title,
 .year,
-.released, .plot {
+.released,
+.plot {
   color: #ccc;
   font-size: 12px;
   display: flex;
   justify-content: space-between;
-  border-bottom: .5px dashed rgb(44, 43, 43);
-
+  border-bottom: 0.5px dashed rgb(44, 43, 43);
 }
-.plot{
-    color:khaki;
-    border-bottom:none;
+.plot {
+  color: khaki;
+  border-bottom: none;
 }

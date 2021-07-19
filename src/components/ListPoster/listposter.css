@@ -4,11 +4,8 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    /* overflow-y: scroll; */
     justify-content: center;
 }
-.posters::-webkit-scrollbar{
-    cursor: pointer;
-}
+
 
 
