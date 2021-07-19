@@ -15,9 +15,8 @@ export const SearchOmdb = () => {
   };
   const clickButton = () => {
     dispatch({ type: ACTIONS.GET_INPUT_VALUE_OMDB, text });
-    console.log(text);
   };
-  const textValue = useSelector((state) => state.searchOmdbhReducer.value);
+  const textValue = useSelector((state) => state.searchOmdbReducer.value);
   const showAnyPage = (event) => {
     let page = event.selected + 1;
     dispatch({ type: ACTIONS.GET_VIDEO_OMDB_PAGINATION, page, textValue });
@@ -25,9 +24,9 @@ export const SearchOmdb = () => {
   const state = useSelector((state) => state);
   return (
     <>
-      {!state.searchOmdbhReducer.request?.Error ? (
+      {!state.searchOmdbReducer.request?.Error ? (
         <>
-          <Form onClick={clickButton} onChange={onChangeForm} />
+          <Form  onClick={clickButton} onChange={onChangeForm} />
           <ReactPaginate
             activeLinkClassName="activeLinkClassName"
             disabledClassName="dis"
@@ -42,7 +41,7 @@ export const SearchOmdb = () => {
             breakClassName="li_page"
             pageRangeDisplayed={3}
             pageCount={Math.ceil(
-              state.searchOmdbhReducer.request?.totalResults / 10
+              state.searchOmdbReducer.request?.totalResults / 10
             )}
           ></ReactPaginate>
         </>
@@ -50,7 +49,7 @@ export const SearchOmdb = () => {
         <>
           <Form onClick={clickButton} onChange={onChangeForm} />
           <h3 style={{ color: "#ccc", textAlign: "center" }}>
-            {state.searchOmdbhReducer.request.Error}
+            {state.searchOmdbReducer.request.Error}
           </h3>
         </>
       )}

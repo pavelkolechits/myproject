@@ -43,7 +43,6 @@ function* showDetailsOmdb(action) {
 function* upPagination(action) {
   try {
     const { page, textValue } = action;
-    console.log(page, textValue);
     const result = yield call(() =>
       fetch(
         `https://www.omdbapi.com/?s=${

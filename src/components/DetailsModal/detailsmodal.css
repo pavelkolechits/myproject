@@ -46,10 +46,8 @@
   height: 580px;
   border-radius: 10px;
 }
-.title,
-.year,
-.released,
-.plot {
+.title
+ {
   color: #ccc;
   font-size: 12px;
   display: flex;
@@ -59,4 +57,8 @@
 .plot {
   color: khaki;
   border-bottom: none;
+  text-align: center;
+}
+.writer{
+  margin-right: 5px;
 }

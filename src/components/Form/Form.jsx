@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const Form = ({ onClick, onChange }) => {
+export const Form = ({onKeyDown, onClick, onChange }) => {
   return (
     <Container className="animate__animated animate__backInDown animate__faster">
       <Input onChange={onChange} />
-      <Button onClick={onClick}>Search</Button>
+      <Button onKeyDown={onKeyDown} onClick={onClick}>Search</Button>
     </Container>
   );
 };

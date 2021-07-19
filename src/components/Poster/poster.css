@@ -7,7 +7,7 @@
   background-color: rgba(197, 187, 187, 0.1);
   cursor: pointer;
 }
-.info {
+.info_poster {
   border: 1px solid rgb(110, 105, 105);
   border-radius: 10px;
   width: 182px;
@@ -21,7 +21,7 @@
   padding: 5px;
 }
 
-.movie {
+.movie_poster {
   display: flex;
   justify-content: center;
   padding-top: 25px;
@@ -55,9 +55,10 @@ img {
   font-size: 15px;
   color: #fff;
 }
-.title {
+.title_poster {
   text-align: center;
+  color: #fff;
 }
-.year {
+.year_poster {
   color: #ccc;
 }

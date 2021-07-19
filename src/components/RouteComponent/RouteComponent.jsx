@@ -19,7 +19,7 @@ export const RouteComponent = () => {
 
   useEffect(() => {
     dispatch({ type: ACTIONS.GET_VIDEO_OMDB_REQUEST });
-  }, []);
+  },[]);
 
   const onClickOmdb = () => {
     setOnclickOmdb(true);
@@ -71,7 +71,7 @@ export const RouteComponent = () => {
           </Route>
         </Switch>
       </Router>
-      {state.searchOmdbhReducer.details ? <DetailsModal /> : ""}
+      {state.searchOmdbReducer.details ? <DetailsModal /> : ""}
     </>
   );
 };

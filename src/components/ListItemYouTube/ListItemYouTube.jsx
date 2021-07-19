@@ -2,7 +2,7 @@ import "./listitemyoutube.css";
 import { ItemYouTube } from "../ItemYouTube/ItemYouTube";
 import { useSelector } from "react-redux";
 
-export const ListItemYouTube = ({}) => {
+export const ListItemYouTube = () => {
   const video = useSelector((state) => state);
 
   return (

@@ -3,7 +3,7 @@ import { Poster } from "../Poster/Poster";
 import { useSelector } from "react-redux";
 
 export const ListPoster = ({ modal, className }) => {
-  const poster = useSelector((state) => state.searchOmdbhReducer.request);
+  const poster = useSelector((state) => state.searchOmdbReducer.request);
 
   return (
     <div style={{width:"860px", display:"flex",flexWrap:"wrap", margin:"auto"}} >

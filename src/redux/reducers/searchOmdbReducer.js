@@ -4,10 +4,9 @@ const defState = {
 	value: '',
 	details: false
 };
-export function searchOmdbhReducer(state = defState, action) {
+export function searchOmdbReducer(state = defState, action) {
 	switch (action.type) {
 		case ACTIONS.GET_VIDEO_OMDB_SUCCESS: {
-			console.log(action)
 			return { ...state, request: action.request };
 		}
 		case ACTIONS.GET_INPUT_VALUE_OMDB: {
