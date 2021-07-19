@@ -1,5 +1,5 @@
 # Search Movie
-#### for TeachMeSkills, coded by [Pavel Kalechyts](https://github.com/pavelkolechit)
+#### for TeachMeSkills, coded by [Pavel Kalechyts](https://github.com/pavelkolechits)
 
 
 
