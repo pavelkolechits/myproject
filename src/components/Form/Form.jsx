@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
-export const Form = ({onKeyDown, onClick, onChange }) => {
+export const Form = ({ onKeyDown, onClick, onChange }) => {
   return (
     <Container className="animate__animated animate__backInDown animate__faster">
       <Input onChange={onChange} />
-      <Button onKeyDown={onKeyDown} onClick={onClick}>Search</Button>
+      <Button onKeyDown={onKeyDown} onClick={onClick}>
+        Search
+      </Button>
     </Container>
   );
 };
@@ -14,6 +16,13 @@ const Container = styled.div`
   width: 500px;
   display: flex;
   justify-content: center;
+  @media (max-width: 850px) {
+    
+    margin: 35px auto;
+    margin-top: 100px;
+    width: 360px;
+
+  }
 `;
 const Input = styled.input`
   width: 350px;
@@ -28,6 +37,12 @@ const Input = styled.input`
   font-weight: lighter;
   letter-spacing: 1px;
   text-decoration-style: none;
+  @media (max-width: 1000px) {
+    width: 300px;
+    height: 30px;
+  }
+ 
+
 `;
 const Button = styled.button`
   background: #00000080;
@@ -38,4 +53,10 @@ const Button = styled.button`
   letter-spacing: 1px;
   margin-left: 2px;
   cursor: pointer;
+
+  @media (max-width: 1000px) {
+    width: 50px;
+    height: 30px;
+    font-size: 10px;
+  }
 `;

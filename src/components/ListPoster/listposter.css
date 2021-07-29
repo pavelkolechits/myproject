@@ -1,11 +1,20 @@
 .posters{
     width:824px;
-    height: 592px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
 }
+@media (max-width: 850px) {
+    .posters{
+        width:410px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px auto;
+        justify-content: center;
+    } 
+}
+
 
 
 

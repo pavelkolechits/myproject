@@ -42,12 +42,11 @@
   background-color: #000;
 }
 .img_allInfo {
-  width: 482px;
+  width: 480px;
   height: 580px;
   border-radius: 10px;
 }
-.title
- {
+.title {
   color: #ccc;
   font-size: 12px;
   display: flex;
@@ -59,6 +58,99 @@
   border-bottom: none;
   text-align: center;
 }
-.writer{
+.writer {
   margin-right: 5px;
+}
+
+@media (max-width: 1000px) {
+  .img_allInfo {
+    width: 400px;
+    height: 550px;
+    border-radius: 10px;
+  }
+  .title {
+    font-size: 11px;
+  }
+  .info_modal {
+    width: 450px;
+    height: 550px;
+  }
+  .contant{
+    width: 880px;
+  height: 570px;
+  
+  }
+  .poster_modal {
+    width: 412px;
+    height: 550px;
+   
+  }
+}
+@media (max-width: 900px) {
+  .img_allInfo {
+    width: 300px;
+    height: 435px;
+    border-radius: 10px;
+  }
+  .title {
+    font-size: 9px;
+  }
+  .info_modal {
+    width: 350px;
+    height: 435px;
+  }
+  .contant{
+    width: 680px;
+  height: 455px;
+  
+  }
+  .poster_modal {
+    width: 300px;
+    height: 435px;
+   
+  }
+}
+@media (max-width: 700px) {
+  .img_allInfo {
+    width: 300px;
+    height: 435px;
+    border-radius: 10px;
+  }
+  .title {
+    font-size: 9px;
+  }
+  .info_modal {
+    width: 350px;
+    height: 435px;
+  }
+  .contant{
+   max-width: 320px;
+height: 450px;
+  padding: 7px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 10px #ccc;
+  background-color: #ccc;
+  overflow-y: scroll;
+  }
+  .contant::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: rgb(5, 5, 5);
+    border-radius:5px
+  }
+  .contant::-webkit-scrollbar-thumb {
+    background-color: rgb(44, 46, 46);
+    border-radius: 2px;
+    border: 1px solid rgb(44, 46, 46);
+  }
+
+  .poster_modal {
+    width: 300px;
+    height: 435px;
+    margin-bottom: 10px;
+   
+  }
 }

@@ -6,7 +6,7 @@ export const ListPoster = ({ modal, className }) => {
   const poster = useSelector((state) => state.searchOmdbReducer.request);
 
   return (
-    <div style={{width:"860px", display:"flex",flexWrap:"wrap", margin:"auto"}} >
+    <div className="posters"  >
       {!poster?.Error
         ? poster?.Search.map((i) => (
             <Poster

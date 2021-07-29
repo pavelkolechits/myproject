@@ -18,6 +18,11 @@
   margin: 0 auto;
   width: 500px;
 }
+@media(max-width:510px)  {
+  .li_cont {
+    width: 380px;
+  }
+}
 .li_each_page {
   width: 30px;
   height: 30px;
