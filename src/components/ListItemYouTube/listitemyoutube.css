@@ -6,3 +6,33 @@
   height: 420px;
   padding: 10px;
 }
+@media (max-width: 1000px) {
+  .wrapp {
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 650px;
+    height: 630px;
+    padding: 10px;
+  }
+}
+@media (max-width: 850px) {
+  .wrapp {
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 548px;
+    height: 587px;
+    padding:0px;
+   
+  }
+}
+@media (max-width: 540px) {
+  .wrapp {
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    min-height: 587px;
+  }
+}
