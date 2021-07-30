@@ -18,11 +18,8 @@
   margin: 0 auto;
   width: 500px;
 }
-@media(max-width:510px)  {
-  .li_cont {
-    width: 380px;
-  }
-}
+
+
 .li_each_page {
   width: 30px;
   height: 30px;
@@ -83,4 +80,78 @@
   font-size: 15px;
   box-shadow: 0px 0px 10px 10px rgb(107, 83, 83);
   border: 1px solid #00000080;
+}
+@media (max-width: 510px) {
+  .li_cont {
+    width: 420px;
+  }
+  .li_page {
+    width: 25px;
+    height: 25px;
+  }
+  .li_link {
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+    margin: 5px auto;
+    margin-left: 1px;
+  }
+  .activeLinkClassName {
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+  }
+  .previos {
+    margin: 2px;
+    width: 25px;
+    height: 25px;
+  }
+  .li_each_page {
+    width: 25px;
+    height: 25px;
+    margin: 2px;
+    font-size: 10px;
+  }
+  .dis {
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+  }
+}
+@media (max-width: 420px) {
+  .li_cont {
+    width: 300px;
+  }
+  .li_page {
+    width: 20px;
+    height: 20px;
+  }
+  .li_link {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    margin: 5px auto;
+    margin-left: 1px;
+  }
+  .activeLinkClassName {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+  }
+  .previos {
+    margin: 2px;
+    width: 20px;
+    height: 20px;
+  }
+  .li_each_page {
+    width: 20px;
+    height: 20px;
+    margin: 2px;
+    font-size: 10px;
+  }
+  .dis {
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+  }
 }

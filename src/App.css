@@ -25,14 +25,23 @@ p {
   font-size: 20px;
 }
 @media (max-width: 1000px){
- 
   body {
-    background-image: url(./img/s.jpeg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    overflow-y: scroll;
-    background-size: contain;
-  
-    background-position-x: -100px;
+  background-position-x: -100px;
+  }
+}
+@media (max-width: 850px){
+  body {
+  background-position-x: -200px;
+  }
+}
+@media (max-width: 500px){
+  body {
+  background-position-x: -300px;
+  }
+}
+@media (max-width: 400px){
+  body {
+  background-position-x: -400px;
+  background-position-y: -100px;
   }
 }

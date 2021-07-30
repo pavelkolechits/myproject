@@ -62,3 +62,42 @@ img {
 .year_poster {
   color: #ccc;
 }
+
+@media (max-width: 510px) {
+  img{
+    width: 180px;
+  height: 255px;
+  }
+  .info_poster{
+    width: 180px;
+    height: 255px;
+  }
+  .poster{
+    width: 180px;
+    height: 255px;
+  }
+  .film{
+    width: 380px;
+    height: 268px;
+  }
+}
+@media (max-width: 400px) {
+  img{
+    width: 150px;
+  height: 225px;
+  }
+  .info_poster{
+    width: 150px;
+    height: 225px;
+  }
+  .poster{
+    width: 150px;
+  height: 225px;
+  }
+  .film{
+    width: 312px;
+    height: 230px;
+    padding: 1px;
+    margin: 6px;
+  }
+}

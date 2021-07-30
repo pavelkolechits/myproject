@@ -41,6 +41,11 @@ const Input = styled.input`
     width: 300px;
     height: 30px;
   }
+  @media (max-width: 420px) {
+    width: 200px;
+    height: 20px;
+    font-size: 15px;
+  }
  
 
 `;
@@ -58,5 +63,10 @@ const Button = styled.button`
     width: 50px;
     height: 30px;
     font-size: 10px;
+  }
+  @media (max-width: 420px) {
+    width: 40px;
+    height: 20px;
+    font-size: 9px;
   }
 `;
