@@ -16,6 +16,8 @@ const Container = styled.div`
   width: 500px;
   display: flex;
   justify-content: center;
+ 
+ 
   @media (max-width: 850px) {
     
     margin: 35px auto;

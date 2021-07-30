@@ -36,12 +36,11 @@ p {
 }
 @media (max-width: 500px){
   body {
-  background-position-x: -300px;
+  background-position-x: -400px;
   }
 }
 @media (max-width: 400px){
   body {
-  background-position-x: -400px;
-  background-position-y: -100px;
+  background-position-x: -500px;
   }
 }

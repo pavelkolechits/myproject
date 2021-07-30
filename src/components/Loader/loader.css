@@ -32,3 +32,26 @@
     opacity: 0;
   }
 }
+
+@media (max-width: 1000px){
+  .lds-ripple {
+    left: 450px;
+  }
+}
+@media (max-width: 850px){
+  .lds-ripple {
+    left: 350px;
+  }
+}
+@media (max-width: 500px){
+  .lds-ripple {
+    left: 150px;
+  }
+}
+@media (max-width: 400px){
+
+  .lds-ripple {
+    left: 50px;
+    
+  }
+}
