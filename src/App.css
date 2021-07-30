@@ -31,7 +31,8 @@ p {
     background-attachment: fixed;
     background-repeat: no-repeat;
     overflow-y: scroll;
-    background-size: cover;
+    background-size: contain;
+  
     background-position-x: -100px;
   }
 }
